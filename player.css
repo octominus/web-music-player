@@ -1,0 +1,69 @@
+#player {
+	width: 350px;
+	height: 50px;
+	position: relative;
+	top: 450px;
+	background: black left top;
+	border-radius: 10px;
+}
+
+#volume {
+	position: absolute;
+	left: 24px;
+	margin: 0px auto;
+	top: 17.5px;
+	height: 15px;
+	width: 300px;
+	background: url('volume-empty.png') no-repeat left top;
+}
+
+#volume .ui-slider-range-min {
+	height: 15px;
+	width: 300px;
+	position: absolute;
+	background: url('volume-full.png') no-repeat left top;
+	border: none;
+	outline: none;
+}
+
+#volume .ui-slider-handle {
+	width: 38px;
+	height: 39px;
+	top: 5.5px;
+	background: url('volume-knob.png') no-repeat left top;
+	position: absolute;
+	margin-left: -15px;
+	margin-top: -13.5px;
+	border: none;
+	outline: none;
+}
+
+.duration-bar {
+	width: 400px;
+	height: 20px;
+	background-color: black;
+	position: relative;
+}
+
+.current-bar {
+	width: 390px;
+	height: 10px;
+	position: absolute;
+	background-color: dimgrey;
+	top: 5px;
+	left: 5px;
+}
+
+.dur {
+	width: 0px;
+	height: 10px;
+	position: absolute;
+	background-color: darkturquoise;
+	top: 0px;
+	left: 0px;
+}
+
+#slider {
+	width: 400px;
+	margin: 10px;
+}
