@@ -3,48 +3,68 @@
     <head>
 	    <meta charset="UTF-8"/>
 		<title>Music Player</title>
-		<link rel="stylesheet" href="player.css"/>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/player.css">
+		<link rel="stylesheet" href="css/design.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-		<script type="text/javascript" src="player.js"></script>
+		<script type="text/javascript" src="js/player.js"></script>
 	</head>
 	<body>
 	<div id="player">
 		<div id="volume"></div>
 	</div>
-	    <audio class="playsong" data-albumart="album-art.png" data-songartist="The Band With No Name" data-songtitle="Misfit" src="music.mp3">
+	    <audio class="playsong" data-albumart="img/album-art.png" data-songartist="The Band With No Name" data-songtitle="Misfit" src="audio/music.mp3">
 		    Please uptade your browser!
 		</audio>
 		
-		<audio class="playsong" data-albumart="album-art.png" data-songartist="Skrillex" data-songtitle="First of the Year" src="music1.mp3">
+		<audio class="playsong" data-albumart="img/album-art.png" data-songartist="Skrillex" data-songtitle="First of the Year" src="audio/music1.mp3">
 		    Please uptade your browser!
 		</audio>
 
-		<audio class="playsong" data-albumart="album-art.png" data-songartist="Edip AKBAYRAM" data-songtitle="Motorları Maviliklere Süreceğiz" src="music2.mp3">
+		<audio class="playsong" data-albumart="img/album-art.png" data-songartist="Edip AKBAYRAM" data-songtitle="Motorları Maviliklere Süreceğiz" src="audio/music2.mp3">
 		    Please uptade your browser!
 		</audio>
 		
-		<div class="songtitle">Title</div>
-		<br/>
-		<div class="songartist">Artist</div>
-		<br/>
-		<img class="songalbumart"/>
-		<br/>
-		<div class="current-duration">00:00</div>------<div class="duration">00:00</div>
-		<div class="duration-bar">
-			<div class="current-bar">
-				<span class="dur"></span>	
-			</div>
+		<!--Music Bar-->
+		<div class="music-bar">
+
+			<!--Music Info-->
+				<img class="songalbumart" width="40px" height="auto"/>
+				<span class="songartist">Artist</span>
+				/
+				<span class="songtitle">Title</span>
+
+			<!--Player Buttons-->
+			<ul class="buttons">
+				<li class="prev">
+					<img src="img/prev.svg">
+				</li>
+				<li class="play">
+					<img src="img/play.svg">
+				</li>
+				<li class="pause">
+					<img src="img/pause.svg">
+				</li>
+				<li class="stop">
+					<img src="img/stop.svg">
+				</li>
+				<li class="next">
+					<img src="img/next.svg">
+				</li>
+			</ul>
+
+			<!--Time Bar-->
+			<span class="time-bar">
+				<span class="current-time-bar"></span>
+				<span class="current-time">
+					<img class="logo" src="img/logo.png"/>
+				</span>
+			</span>
+
+			<!--Time Info-->
+			<div class="current-duration">00:00</div>------<div class="duration">00:00</div>
 		</div>
-		
-		<div id="slider"></div>
-
-		<div class="play"> PLAY </div>
-		<div class="pause"> PAUSE </div>
-		<div class="stop"> STOP </div>
-		<div class="next"> NEXT </div>
-		<div class="prev"> PREV </div>
-		
 	</body>
 </html>
